@@ -27,11 +27,13 @@ const fetchBreedDescription = function(breedName, callback) {
   }  
   try
     {     
-    console.log(data[0].description);
+    // console.log(data[0].description);
+    return data[0].description;
     }
     catch(error){
-      console.log(error);
-      console.log('error: Requested breed not found'); // Print the error if one occurred
+      return error;
+      // console.log(error);
+      // console.log('error: Requested breed not found'); // Print the error if one occurred
       }
     
   });
